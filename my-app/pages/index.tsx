@@ -82,7 +82,7 @@ export default function Home() {
 
   const checkIfAddressInWhitelist = async () => {
     try {
-      const signer = await getProviderOrSigner(true);
+      const signer: any = await getProviderOrSigner(true);
       const whitelistContract = new Contract(
         WHITELIST_CONTRACT_ADDRESS,
         abi,
