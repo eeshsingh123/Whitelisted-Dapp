@@ -16,7 +16,7 @@ export default function Home() {
   const [numberOfWhitelisted, setNumberOfWhitelisted] = useState(0);
 
   //createa reference to Web3Modal (used for connecting to Metamask)
-  const web3ModalRef = useRef();
+  const web3ModalRef: any = useRef();
 
   // This function will provide a Provider -> to read  from the blockchain & Signer -> To write to the blockchai
   const getProviderOrSigner = async (needSigner = false) => {
